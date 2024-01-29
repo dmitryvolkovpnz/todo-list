@@ -48,6 +48,7 @@ export default class TodoAdd extends Component {
         const date = new Date();
         newDeed.done = false;
         newDeed.createdAt = date.toLocaleString();
+        newDeed.key = date.getTime();
         this.props.add(newDeed);
         this.setState((state) => ({ redirect: true }));
     }
