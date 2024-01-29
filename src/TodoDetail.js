@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 
+//вывод детальной страницы дела в списке дел
 export default function TodoDetail(props) {
     const { key } = useParams();
     const deed = props.getDeed(key);

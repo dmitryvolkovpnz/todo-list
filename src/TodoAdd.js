@@ -81,15 +81,17 @@ export default class TodoAdd extends Component {
 
                     <div className="field">
                         <div className="file">
-                            <input className="file-input"
-                                   type="file" accept="image/*"
-                                   onChange={this.handleImageChange}
-                            />
-                            <span className="file-cta">
+                            <label className="file-label">
+                                <input className="file-input"
+                                       type="file" accept="image/*"
+                                       onChange={this.handleImageChange}
+                                />
+                                <span className="file-cta">
                                 <span className="file-label">
                                     графическая илюсстрация
                                 </span>
                             </span>
+                            </label>
                         </div>
                     </div>
                     <div className="field is-grouped is-grouped-right">
