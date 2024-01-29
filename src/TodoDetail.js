@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 
-//вывод детальной страницы дела в списке дел
 export default function TodoDetail(props) {
     const { key } = useParams();
     const deed = props.getDeed(key);
@@ -15,7 +14,7 @@ export default function TodoDetail(props) {
             <h1>{deed.title}</h1>
             <p>{deed.createdAt}</p>
             {deed.desc && <p>{deed.desc}</p>}
-            {deed.image && <p><img src="{deed.image}"
+            {deed.image && <p><img src={deed.image}
                                    alt="Иллюстраци"/></p>}
         </section>
     )
